@@ -1,0 +1,21 @@
+services:
+  hbbs:
+    container_name: rustdesk-rendezvous-server
+    image: rustdesk/rustdesk-server
+    command: hbbs -r ${YOUR_DOMAIN_NAME}:${YOUR_PORT}
+    ports:
+        - 21115:21115
+        - 21116:21116
+        - 21116:21116/udp
+        - 21118:21118
+    volumes:
+      - ./data:/root
+  hbbr:
+    image: rustdesk/rustdesk-server
+    container_name: rustdesk-relay-server
+    command: hbbr
+    ports:
+        - 21117:21117
+        - 21119:21119
+    volumes:
+      - ./data:/root
