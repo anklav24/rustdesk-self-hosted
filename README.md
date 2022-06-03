@@ -31,6 +31,7 @@
 
   ```bash
   docker-compose up -d
+  docker-compose logs -f
   ```
 
 - Open ports on your router and forward to server with rustdesk
