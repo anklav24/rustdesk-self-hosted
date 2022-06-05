@@ -16,8 +16,8 @@
 
   ```bash
   cd ~
-  git clone https://github.com/anklav24/rustdesk-self-hoster.git
-  cd rustdesk-self-hoster
+  git clone https://github.com/anklav24/rustdesk-self-hosted.git
+  cd rustdesk-self-hosted
   ```
 
 - Edit `.env`
