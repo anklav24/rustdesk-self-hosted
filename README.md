@@ -47,3 +47,11 @@
 
   - Id server: YOUR_DOMAIN_NAME
   - Key: SQJABZtnQkwpT1SJFkg14iuM2KhuVkeKOi+wCV6HI6A=  (Example)
+
+# Update
+
+```Bash
+docker-compose pull
+docker-compose up -d --remove-orphans
+docker image prune
+```
